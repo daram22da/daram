@@ -643,10 +643,9 @@ async def task():
 
 #mp3 파일 생성함수(gTTS 이용, 남성목소리)
 async def MakeSound(saveSTR, filename):
-	
+	'''
 	tts = gTTS(saveSTR, lang = 'ko')
 	tts.save('./' + filename + '.mp3')
-	
 	'''
 	try:
 		encText = urllib.parse.quote(saveSTR)
